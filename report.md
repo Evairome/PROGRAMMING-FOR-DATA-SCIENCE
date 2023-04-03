@@ -1,0 +1,20 @@
+This coursework would be my most daunting academic task thus far while also being the most rewarding. Nothing prepared me for the work and enormous research the coursework required in learning how to parse and clean data, populate entity-relationship diagrams, create databases with both SQL and NoSQL databases and in general, analyze real-life data. I heard to watch many Youtube videos and google extensively especially on Pandas, MongoDb, MariaDB and also python functions and methods.
+
+Task 1 required importing pandas to effectively and efficiently crop and cleanse the data. The cropping process involved converting the Date Time column from a string to Date Time object and using .loc to crop the data to the requested timeframe. Afterwards, I used the cropped csv to clean off mismatched Sites and Locations. 
+At this point, I had to introduce a new argument 'low_memory= False' to override the mixed data types' error message when reading csv. 
+To achieve the cleaning, I had to link a dictionary with Site ID as keys and Location as values to the dataframe. Thereafter, I used the 'def function', if or else statement, dictionary method-.get and.apply to locate mismatched values and drop the items.
+
+For Task 2, I had to learn how to create an ER diagram in 3NF with MySQL workbench. I learnt the unique datatypes of MYSQL especially TINYINT which refers to boolean(True/False) values in Python.
+
+Moving ahead, Task 3 was difficult. After creating my tables, I had to figure out how to replicate the SQL INSERT INTO structure to python codes; which would enable me insert my values to the tables. The rows were eventually inserted as tuples and had their brackets stripped. 
+The next step was changing my DATE TIME from timestamp object to a string format accepted by SQL. Connecting my python script to SQL database was the biggest challenge. My system kept freezing as a result of the large size of data in the reading table. I had to partition my rows to 5,000 per query in line with MariaDB's memory allocation for my Operating System. 
+
+Task 4 was quite straightforward, the only problem was reading my database as the hyphen in the title 'pollution-db2' was printing an error message in SQL. I figured out that I could read my database with backticks that is USE `pollution-db2`, to escape special characters.
+
+For the last task, I used MongoDB noSQL database type and connected with Python. The two issues I had here were first, realizing that I had to install dnspython with my pymongo library for the connection from Python to MongoDB after getting an import module error. I also imported JSON as it is a compartible file format in MongoDB. The other, was reading the MongoDB documentation thoroughly to understand the various datatypes and their adaptability to validate my schema.
+Although MongoDB, prides itself on the flexibility of its schema, it was particularly difficult querying my database. After countless attempts and failures, I resulted to running my queries on my python script and pasting it in my report. Also, Fields such as Date Time, Location, GeoPoint2D, Date Start, Date End, Current and Instrument Type were constant as a result of the absence of null or NAN values in their documents.
+
+In addition, matplotlib and seaborn libraries are good for data visualization. They enable the user to plot scattergraphs, lineplots and histograms.
+
+In conclusion, this task has provided new knowledge on how to crop, clean create ER diagrams, create databases in SQL and NoSQL, connect databases through Python and query these databases. 
+
